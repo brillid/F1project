@@ -1,0 +1,467 @@
+/* Add black background to body */
+body {
+    font-size: 16px;
+    font-family:"open sans",arial,sans-serif;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    min-width: fit-content;
+}
+
+
+/* Add a black background color to the header */
+.header {
+    overflow: hidden;
+    background-color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 1270px;
+    margin: 0 auto;
+}
+
+/* Style the links inside the header */
+.header a {
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 13px 0px;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #1a1a1a;
+    color: red;
+}
+
+/* Hide the link that should open and close the header on small screens */
+.header .icon {
+    display: none;
+}
+
+/* Add a dark background on header links and the dropdown button on hover */
+.header a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #1a1a1a;
+    color: red;
+    transition: 0.5s;
+}
+
+/* Add background and text color in active header */
+.header a.active {
+    background-color: #1a1a1a;
+    color: red;
+}
+
+.header .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the dropdown */
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    font-weight: bold;
+    outline: none;
+    color: white;
+    padding: 13px 0px;
+    margin: 0px 10px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    border-top: 1px solid #1F1F1F;
+    padding: 12px 16px;
+    margin: 0px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.social {
+    float: right;
+    margin: 0 auto;
+    font-weight: bold;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social a {
+    opacity: 0.5;
+    color: white;
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding: 13px 0px;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    opacity: 0.9;
+    background-color: #1a1a1a;
+    color: red;
+    transition: 0.5s;
+}
+
+.login {
+    float: right;
+    overflow: hidden;
+}
+
+.login .loginbtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    opacity: 0.5;
+    padding: 13px 0px;
+    margin: 0px 10px;
+    background-color: inherit;
+}
+
+.login:hover, .loginbtn:hover {
+    background-color: #1a1a1a;
+    opacity: 0.9;
+    color: red;
+    transition: 0.5s;
+}
+
+.show {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .header a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+    .header a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header.responsive {position: relative;}
+    .header.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header.responsive .dropdown {float: none;}
+    .header.responsive .dropdown-content {position: relative;}
+    .header.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+#ontopbtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #1a1a1a; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#ontopbtn:hover {
+    background-color: red; /* Add a red background on hover */
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 11px 10px;
+    margin: 0px;
+    display: inline-block;
+    border: 2px inset;
+    box-sizing: border-box;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.loginheader {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+    font-size: 21px;
+    font-family: 'Roboto',sans-serif;
+    background-color: rgba( 0,0,0, 0.05 );
+}
+
+.logintitle {
+    text-align: center;
+    margin: 0px;
+    padding: 20px 0px;
+    font-size: 21px;
+    font-family: 'Roboto',sans-serif;
+    background-color: rgba( 0,0,0, 0.05 );
+}
+
+.loginwelcome {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.we {
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pr {
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logincontainer {
+    padding: 16px 50px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    
+}
+
+.logincontainer p {
+    margin: 0px 0px 10px 0px;
+}
+
+
+
+.loginfooter {
+    padding: 16px 50px;
+    text-align: center;
+}
+
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 12; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #ffffff;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+}
+
+.loginbtn {
+    padding: 14px 22px;
+    font-size: 13px;
+
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* izdvojene vijesti */
+.izdvojenevijesti {
+    background: black;
+    margin: 5px auto;
+    padding: 0px;
+    width: 1270px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* pozicija prve izdvojene */
+.prvaizdvojena {
+    width: 70%;
+    height: 450px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+/* pozicija slike prveizdvojene */
+.prvaizdvojena img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -10%;
+    transition: 0.3s;
+}
+
+.prvaizdvojena:hover img {
+    transform: scale3d(1.1,1.1,1);
+    -webkit-transform: scale3d(1.1,1.1,1);
+    -moz-transform: scale3d(1.1,1.1,1) rotate(.02deg);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.meta_prveizdvojene {
+    position: absolute;
+    bottom: 0px;
+    font-family: "Poppins", sans-serif;
+    z-index: 11;
+}
+
+.meta_prveizdvojene h2 a {
+    font-size: 31px;
+    text-decoration-line: none;
+    color: white;
+    transition: 0.6s;
+}
+
+.meta_prveizdvojene h2 a:hover {
+    color: red;
+}
+
+.meta_prveizdvojene h2 {
+    margin: 5px 0px;
+}
+
+.meta_prveizdvojene h4 {
+    margin: 0;
+}
+.meta_prveizdvojene h4 a {
+    color: white;
+    font-size: 13px;
+    text-decoration-line: none;
+    transition: 0.6s;
+}
+
+.meta_prveizdvojene h4 a:hover {
+    color: red;
+}
+
+.prvaizdvojena:before {
+    content: '';
+    position: absolute;
+    top: 200px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom,#ffffff00,#000000);
+    opacity: 1;
+    z-index: 10;
+}
+
+.meta_prveizdvojene .naslovprveizdvojene {
+    margin: 10px 10px;
+}
+
+.naslovprveizdvojene {
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 30px;
+}
