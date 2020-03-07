@@ -187,14 +187,14 @@ body {
     .header.responsive a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: center;
     }
     .header.responsive .dropdown {float: none;}
     .header.responsive .dropdown-content {position: relative;}
     .header.responsive .dropdown .dropbtn {
         display: block;
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
 }
 

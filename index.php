@@ -15,7 +15,7 @@
 <div class="header" id="myHeader">
     <div class="menu">
         <a href="index.html" class="logo">COMPANY LOGO</a>
-        <a href="#">NOBVOSTI</a>
+        <a href="#">NOVOSTI</a>
         <div class="dropdown">
             <button class="dropbtn" onclick="dropdown()">DROPDOWN
             <i class="fa fa-caret-down"></i></button>
